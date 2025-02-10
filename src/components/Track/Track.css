@@ -1,0 +1,13 @@
+.Track {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.Track button {
+  background-color: #1db954;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

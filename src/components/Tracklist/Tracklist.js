@@ -2,12 +2,17 @@ import React from 'react';
 import Track from '../Track/Track';
 import './Tracklist.css';
 
-const Tracklist = () => {
+const Tracklist = ({ tracks }) => {
 	return (
 		<div className='Tracklist'>
-			<Track />
-			<Track />
-			<Track />
+			{tracks.map((track) => (
+				<Track
+					key={track.id} // Unique key
+					name={track.name}
+					artist={track.artist}
+					album={track.album}
+				/>
+			))}
 		</div>
 	);
 };

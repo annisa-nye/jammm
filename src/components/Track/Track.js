@@ -1,10 +1,12 @@
 import React from 'react';
 import './Track.css';
 
-const Track = () => {
+const Track = ({ name, artist, album }) => {
 	return (
 		<div className='Track'>
-			<p>Track Name - Artist Name</p>
+			<p>
+				<strong>{name}</strong> - {artist} ({album})
+			</p>
 			<button>+</button>
 		</div>
 	);
