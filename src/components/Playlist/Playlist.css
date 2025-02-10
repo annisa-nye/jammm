@@ -1,0 +1,13 @@
+.Playlist {
+  flex: 1;
+  padding: 10px;
+}
+
+.Playlist button {
+  padding: 10px;
+  background-color: #1db954;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
